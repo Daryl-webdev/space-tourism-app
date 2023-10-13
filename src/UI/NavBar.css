@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+.navbar__wrapper {
+    padding: 20px;
+    background-color: white;
+    background: linear-gradient(to right top,
+    rgba(255,255,255,0.1),
+    rgba(255,255,255,0.1));
+    backdrop-filter: blur(18px);
+    display: flex;
+    flex-direction: column;
+}
+.navbar {
+    list-style-type: none;
+    display: flex;
+    color: #FFFFFF;
+}
+
+.navbar__nav {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-size: 16px;
+    letter-spacing: 2.7px;    
+    
+}
+
+.navbar__hr{
+    border-top: 4px solid red;
+}
