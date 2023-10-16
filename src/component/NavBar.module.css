@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
+
+.navbar__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__logo {
+    background-image: url(../assets/shared/logo.svg) no-repeat center center fixed;
+}
+
+.navbar__logo::after{
+    content: '';
+    background-color: white;
+    height: 10px;
+    width: 100%;
+    display: inline;
+}
+
+.navbar__active__item::after {
+    content: '';
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+}
+
