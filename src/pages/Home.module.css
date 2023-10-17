@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+
 .home__wrapper {
   background: url(../assets/home/background-home-desktop.jpg) no-repeat center center fixed;
   height: 100vh; 
@@ -7,7 +9,30 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.home__content {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column ;
+  width: 35%;
+}
 
+.page__content {
+  font-family: 'Bellefair';
+  font-weight: 100;
+  color: white;
+  text-transform: uppercase;
+}
+.home__heading__five {
+  font-size: 28px;
+}
+.home__heading__one {
+  font-size: 150px;
+}
+
+.home__p {
+  color: white;
+  font-family: sans-serif;
+}
 @media (width <= 425px ) {
   .home__wrapper {
     background: url(../assets/home/background-home-mobile.jpg) no-repeat center center fixed;
