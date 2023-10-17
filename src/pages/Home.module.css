@@ -8,10 +8,15 @@
   background-size: cover;
 }
 
-@media (max-width: 375px ) {
+@media (width <= 425px ) {
   .home__wrapper {
     background: url(../assets/home/background-home-mobile.jpg) no-repeat center center fixed;
     height: 100vh; 
     width: 100vw; 
+  }
+}
+@media ( 425px < width <= 768px ) {
+  .home__wrapper {
+    padding: 0px 0 0 10px;
   }
 }
