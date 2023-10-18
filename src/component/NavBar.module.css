@@ -5,27 +5,27 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    width: 100vw;
+    padding: 30px 0 30px 30px;
 }
 
 .navbar__logo {
     background-image: url(../assets/shared/logo.svg) no-repeat center center fixed;
 }
 
-.navbar__logo::after{
-    content: '';
-    background-color: white;
-    height: 10px;
-    width: 100%;
-    display: inline;
-}
 
-.navbar__active__item::after {
-    content: '';
-    background-color: white;
-    height: 2px;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    bottom: -30px;
-}
 
+
+
+
+@media (width < 426px ) {
+    .navbar__logo{
+        height: 40px;
+    }
+    .navbar__wrapper {
+        align-items: center;
+    }
+  
+   
+  }

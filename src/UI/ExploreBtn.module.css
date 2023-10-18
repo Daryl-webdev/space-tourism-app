@@ -1,0 +1,78 @@
+:root {
+    --outer-circle-size: 274px;
+    --inner-circle-size:220px;
+    --outer-circle-size_tablet: 242px;;
+    --inner-circle-size_tablet: 220px;;
+    --outer-circle-size_mobile: 180px;;
+    --inner-circle-size_mobile: 150px;;
+}
+.explore__container {
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.explore__btn , .explore__outer__circle {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.explore__btn {
+    background-color: #FFFF;
+    height: var(--inner-circle-size);
+    width: var(--inner-circle-size);
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.explore__outer__circle {
+    background: hsl(0 0% 100% / 0.2);
+    height: var(--outer-circle-size);
+    width: var(--outer-circle-size);
+    position: absolute;
+    right:calc(calc( var(--inner-circle-size) - var(--outer-circle-size)) / 2)
+}
+
+
+/* Mobile */
+@media (width < 426px ) {
+
+    .explore__btn {
+        background-color: #FFFF;
+        height: var(--inner-circle-size_mobile);
+        width: var(--inner-circle-size_mobile);
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    
+    .explore__outer__circle {
+        background: hsl(0 0% 100% / 0.2);
+        height: var(--outer-circle-size_mobile);
+        width: var(--outer-circle-size_mobile);
+        position: absolute;
+        right:calc(calc( var(--inner-circle-size_mobile) - var(--outer-circle-size_mobile)) / 2)
+    }
+    .explore__container {
+        margin-top: 4.5rem;
+    }
+}
+
+@media ( 426px <= width <= 768px ) {
+    .explore__btn {
+        height: var(--inner-circle-size_tablet);
+        width: var(--inner-circle-size_tablet);
+        font-size: 32px;
+    }
+    
+    .explore__outer__circle {
+        height: var(--outer-circle-size_tablet);
+        width: var(--outer-circle-size_tablet);
+        right:calc(calc( var(--inner-circle-size_tablet) - var(--outer-circle-size_tablet)) / 2)
+    }
+    .explore__container {
+        margin-top: 6.5rem;
+    }
+
+}

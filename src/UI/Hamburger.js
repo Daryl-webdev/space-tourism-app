@@ -1,12 +1,8 @@
 import React, { useRef } from "react";
 import { FaBars, FaTimes } from 'react-icons/fa'
 import classes from "./Hamburger.module.css";
-const Hamburger = (props) => {
 
-  // const navRef = useRef()
-  // const toggleNavIcon = () => {
-  //   navRef.current.classList.toggle('toggleNavIcon')
-  // }
+const Hamburger = (props) => {
   return (
     <div className={classes.burger__container} >
       {

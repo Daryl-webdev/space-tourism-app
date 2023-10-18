@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
 .home__wrapper {
   background: url(../assets/home/background-home-desktop.jpg) no-repeat center center fixed;
@@ -9,39 +10,98 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.home__content__container {
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-around;
+  margin-top: 12rem;
+  margin-right: 2rem;
+}
 .home__content {
-  /* background-color: red; */
   display: flex;
   flex-direction: column ;
   width: 35%;
 }
 
 .page__content {
-  font-family: 'Bellefair';
   font-weight: 100;
   color: white;
-  text-transform: uppercase;
+ 
 }
 .home__heading__five {
+  font-family: 'Barlow Condensed';
   font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4.72px;
 }
 .home__heading__one {
+  font-family: 'Bellefair';
   font-size: 150px;
+  text-transform: uppercase;
 }
 
 .home__p {
-  color: white;
-  font-family: sans-serif;
+  font-family: 'Barlow Condensed';
+  line-height: 1.8;
 }
-@media (width <= 425px ) {
+@media (width < 426px ) {
   .home__wrapper {
     background: url(../assets/home/background-home-mobile.jpg) no-repeat center center fixed;
     height: 100vh; 
     width: 100vw; 
   }
-}
-@media ( 425px < width <= 768px ) {
-  .home__wrapper {
-    padding: 0px 0 0 10px;
+
+  .home__content__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    margin-top: 7rem
   }
+  .home__content {
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .home__heading__five {
+    font-size: 16px;
+  }
+  .home__p {
+    font-size: 16px;
+    padding: 0 10px;
+    line-height: 1.5;
+   text-align: center;
+   }
+
+  .home__heading__one {
+    font-size: 80px ;
+  }
+ 
+
+ 
+}
+@media ( 426px <= width <= 768px ) {
+  .home__wrapper {
+      background: url(../assets/home/background-home-tablet.jpg) no-repeat center center fixed;
+  }
+  .home__content__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+  }
+  .home__content {
+    width: 60%;
+    margin: auto;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+  .home__p {
+    font-size: 18px;
+   text-align: center;
+   }
 }

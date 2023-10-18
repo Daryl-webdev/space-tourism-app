@@ -10,7 +10,7 @@
 }
 
 
-@media (width <= 425px ) {
+@media (width < 426px ) {
     .burger__container {
         display: flex;
     }

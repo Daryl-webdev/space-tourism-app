@@ -7,7 +7,7 @@ import NavItem from "../UI/NavItem";
 const NavBar = () => {
   return (
     <div className={classes.navbar__wrapper}>
-      <img src={logo} alt="space-tourism-logo" />
+      <img src={logo} alt="space-tourism-logo" className={classes.navbar__logo} />
       <NavItem />
     </div>
   );
