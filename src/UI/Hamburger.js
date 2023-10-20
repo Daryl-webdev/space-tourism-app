@@ -5,18 +5,9 @@ import classes from "./Hamburger.module.css";
 const Hamburger = (props) => {
   return (
     <div className={classes.burger__container} >
-      {
-        props.isShowing ?
-          <button onClick={props.onClick} className={classes.nav__btn}>
-            <FaTimes />
-          </button>
-          :
-          <button onClick={props.onClick} className={classes.nav__btn}>
-            <FaBars />
-          </button>
-      }
-
-
+      <button onClick={props.onClick} className={classes.nav__btn}>
+        {props.isShowing ? <FaTimes /> : <FaBars />}
+      </button>
     </div>
   );
 };

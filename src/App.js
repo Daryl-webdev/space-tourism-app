@@ -1,9 +1,9 @@
 import NavBar from "./component/NavBar";
-import Crew from "./pages/Crew";
-import Destination from "./pages/Destination";
-import Home from "./pages/Home"
+import Crew from "./component/pages/Crew";
+import Destination from "./component/pages/Destination";
+import Home from "./component/pages/Home"
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Technology from "./pages/Technology";
+import Technology from "./component/pages/Technology";
 
 
 function App() {

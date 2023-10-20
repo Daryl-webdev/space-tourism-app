@@ -1,8 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
 .home__wrapper {
-  background: url(../assets/home/background-home-desktop.jpg) no-repeat center center fixed;
+  background: url(../../assets/home/background-home-desktop.jpg) no-repeat center center fixed;
   height: 100vh; 
   width: 100vw; 
   padding: 30px 0 30px 30px;
@@ -22,7 +20,6 @@
 .home__content {
   display: flex;
   flex-direction: column ;
-  width: 35%;
 }
 
 .page__content {
@@ -32,23 +29,25 @@
 }
 .home__heading__five {
   font-family: 'Barlow Condensed';
-  font-size: 28px;
+  font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 4.72px;
 }
 .home__heading__one {
   font-family: 'Bellefair';
-  font-size: 150px;
+  font-size: 120px;
   text-transform: uppercase;
 }
 
 .home__p {
   font-family: 'Barlow Condensed';
-  line-height: 1.8;
+  line-height: 2;
+  width: 370px;
+  
 }
 @media (width < 426px ) {
   .home__wrapper {
-    background: url(../assets/home/background-home-mobile.jpg) no-repeat center center fixed;
+    background: url(../../assets/home/background-home-mobile.jpg) no-repeat center center fixed;
     height: 100vh; 
     width: 100vw; 
   }
@@ -61,7 +60,7 @@
     margin-top: 7rem
   }
   .home__content {
-    width: 100%;
+    width: 327px;
     margin: auto;
     align-items: center;
     gap: 1.5rem;
@@ -74,18 +73,17 @@
     padding: 0 10px;
     line-height: 1.5;
    text-align: center;
+   width: 100%;
    }
 
   .home__heading__one {
     font-size: 80px ;
   }
  
-
- 
 }
 @media ( 426px <= width <= 768px ) {
   .home__wrapper {
-      background: url(../assets/home/background-home-tablet.jpg) no-repeat center center fixed;
+      background: url(../../assets/home/background-home-tablet.jpg) no-repeat center center fixed;
   }
   .home__content__container {
     flex-direction: column;
@@ -94,7 +92,7 @@
     padding-top: 0;
   }
   .home__content {
-    width: 60%;
+    width: 450px;
     margin: auto;
     align-items: center;
     gap: 2rem;
@@ -105,3 +103,20 @@
    text-align: center;
    }
 }
+
+
+/* @media ( 768px < width < 1440px ) {
+  .home__p {
+    font-size: 19px;
+    width: 100%;
+
+   }
+   .home__content__container {
+    margin-top: 7rem;
+  }
+  .home__p {
+    font-family: 'Barlow Condensed';
+    line-height: 2;
+    width: 444px;
+  }
+} */

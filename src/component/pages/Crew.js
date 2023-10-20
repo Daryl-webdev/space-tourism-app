@@ -1,6 +1,6 @@
 import React from "react";
-import NavBar from "../component/NavBar";
-import ExploreBtn from "../UI/ExploreBtn";
+import NavBar from "../NavBar";
+import ExploreBtn from "../../UI/ExploreBtn";
 import classes from "./Crew.module.css";
 
 

@@ -1,0 +1,134 @@
+
+.destination__wrapper {
+    background: url(../../assets/destination/background-destination-desktop.jpg) no-repeat center center fixed;
+    height: 100vh; 
+    width: 100vw; 
+    padding: 30px 0 0 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .destination__container {
+    padding:7rem 10rem 0;
+  }
+  .destination__container > h2 > span {
+    margin-right: 1rem;
+    font-weight: bolder;
+    opacity: .25;
+  }
+  
+  .destination__container > h2 {
+    font-family: 'Barlow Condensed';
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4.72px;
+    color: #FFFF;
+    margin-bottom: 2rem;
+  }
+  
+
+  .destination__moon__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15rem;
+  }
+
+  .destination__moon__img {
+    height: 300px;
+    width: 300px;
+  }
+
+  
+  .destination__description {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    height: 19rem;
+  }
+
+  /* Sub-nav */
+  .destination__navigation {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .destination__navigation_item {
+    list-style-type: none;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    letter-spacing: 2.3px;
+    color: #D0D6F9;
+  }
+
+  .destination__planet {
+    font-family: 'Bellefair';
+    font-size: 70px;
+    font-weight: 200;
+  }
+
+  .destination__planet__desc {
+    margin-bottom: 1rem;
+    font-size: 17px;
+    font-family: 'Barlow';
+    position: relative;
+    line-height: 27px;
+    color: #D0D6F9;
+  }
+
+  .destination__planet__desc::after {
+   content: '';
+   background-color: hsl(270, 1%, 40%);
+   height: 1px;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   bottom: -1.5rem;
+  }
+  .destination__distance ,.destination__travel__time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1.9rem;
+  }
+  .destination__distance__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .destination__distance__container p:nth-child(1){
+    font-family: 'Barlow Condensed';
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+  }
+
+  .destination__distance__container p:nth-child(2){
+    font-family: 'Bellefair';
+    font-size: 24px;
+    color: #FFFF;
+    text-transform: uppercase;
+  }
+  @media (width < 426px ) {
+  .destination__moon {
+    height: 200px;
+    width: 200px;
+  }
+  
+ 
+}
+
+@media ( 426px <= width <= 768px ) {
+  .destination__moon {
+    height: 200px;
+    width: 200px;
+  }
+
+ 
+}
+
