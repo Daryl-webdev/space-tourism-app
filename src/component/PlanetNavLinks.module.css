@@ -1,0 +1,46 @@
+ /* Sub-nav */
+ .planet__navigation {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    width: 60%;
+    height: 80px;
+    align-items: center;
+    margin-left: -5px;
+  }
+  .planet__navigation__item {
+    list-style-type: none;
+    font-family: 'Barlow Condensed';
+    font-size: 16px;
+    letter-spacing: 2.3px;
+    color: #D0D6F9;
+    cursor: pointer;
+    text-decoration: none;
+    position: relative;
+
+  }
+
+.active__planet__navigation__item::after {
+    content: '';
+    background-color: #979797;
+    height: 2px;
+    position: absolute;
+    display: flex;
+    left: 0;
+    width: 0;
+    bottom: -10px;
+    animation: underline .3s linear forwards;
+}
+ 
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+    50% {
+        width: 50%;
+    }
+    100% {
+        width: 100%;
+    }
+}

@@ -1,0 +1,89 @@
+.crew__wrapper {
+    background: url(../assets/crew/background-crew-desktop.jpg) no-repeat center center fixed;
+    height: 100vh; 
+    width: 100vw; 
+    padding: 30px 0 30px 30px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+  }
+
+  .crew__container {
+    padding:7rem 10rem 0;
+    position: relative;
+  }
+
+  .crew__container > h2 > span {
+    margin-right: 1rem;
+    font-weight: bolder;
+    opacity: .25;
+  }
+  
+  .crew__container > h2 {
+    font-family: 'Barlow Condensed';
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 4.72px; 
+    color: #FFFF;
+    margin-bottom: 4rem;
+  }
+  .crew__heading__five, .crew__heading__one, .crew__p {
+    font-weight: 100;
+    color: #FFFF;
+   
+  }
+  .crew__heading__five {
+    font-family: 'Bellefair';
+    font-size: 26px;
+    opacity: 52%;
+    text-transform: uppercase;
+    
+  }
+  .crew__heading__one {
+    font-family: 'Bellefair';
+    font-size: 50px;
+    text-transform: uppercase;
+  }
+  
+  .crew__p {
+    font-family: 'Barlow Condensed';
+    line-height: 2;
+    width: 400px;
+    
+  }
+
+  .crew__img__container {
+    height: 100%;
+    position: relative;
+  }
+
+  .crew__img {
+    height: 80%;
+    position: absolute;
+    bottom: -30px;
+  }
+
+  .crew__pagination__container {
+    position: absolute;
+    bottom: 3rem;
+    display: flex;
+    gap: 1rem;
+  }
+  .crew__pagination{
+    width: 15px;
+    height: 15px;
+    border: none;
+    opacity: 17.44%;
+    background-color: #FFFF;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .active {
+    opacity: 100%;
+  }
+
+  .crew__pagination:hover {
+    opacity: 50.01%;
+  }

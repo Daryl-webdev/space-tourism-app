@@ -1,16 +1,13 @@
 import React, { useState } from "react";
 import classes from "./NavItem.module.css";
 import Hamburger from "./Hamburger";
-import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
-const NavItem = () => {
+const NavItem = ({ activeItem, onNavItemClick }) => {
   const [isNavShowing, setIsNavShowing] = useState(false)
-  const [activeItem, setActiveItem] = useState(0);
 
-  const navItemHandler = (itemNumber) => {
-    setActiveItem(itemNumber);
-  };
+
 
   const toggleNavIcon = () => {
     setIsNavShowing(prev => !prev)
@@ -31,10 +28,11 @@ const NavItem = () => {
     <>
       <ul className={navStyle}>
         {Object.entries(navLinksObj).map((link, indx) => {
+          //link[1] are the endpoints/pathname
           return <Link to={link[1]} key={link[0]}
-            className={`${classes.navbar__item} ${activeItem === indx && classes.navbar__active__item
+            className={`${classes.navbar__item} ${link[1] === activeItem && classes.navbar__active__item
               }`}
-            onClick={() => navItemHandler(indx)}>
+            onClick={() => onNavItemClick(link[1])}>
             <span>{'0' + indx}</span>
             {link[0]}
           </Link>

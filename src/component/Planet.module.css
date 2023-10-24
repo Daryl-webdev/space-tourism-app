@@ -1,0 +1,54 @@
+.destination__planet {
+    font-family: 'Bellefair';
+    font-size: 70px;
+    font-weight: 200;
+    margin-top: 2rem;
+  }
+
+  .destination__planet__desc {
+    margin-bottom: 1rem;
+    font-size: 15px;
+    font-family: 'Barlow';
+    position: relative;
+    line-height: 27px;
+    color: #D0D6F9;
+  }
+
+  .destination__planet__desc::after {
+   content: '';
+   background-color: hsl(270, 1%, 40%);
+   height: 1px;
+   width: 100%;
+   position: absolute;
+   left: 0;
+   bottom: -1.5rem;
+  }
+
+  .destination__distance__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .destination__distance__container p:nth-child(1){
+    font-family: 'Barlow Condensed';
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #D0D6F9;
+  }
+
+  .destination__distance__container p:nth-child(2){
+    font-family: 'Bellefair';
+    font-size: 24px;
+    color: #FFFF;
+    text-transform: uppercase;
+  }
+
+   
+  .destination__distance ,.destination__travel__time {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1.9rem;
+  }
