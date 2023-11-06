@@ -8,7 +8,7 @@ const PlanetNavLinks = ({ data, activePlanet, onNavigate }) => {
         {data.map(planet => {
             return (
                 <Link className={`${classes.planet__navigation__item}  ${activePlanet === planet && classes.active__planet__navigation__item}`}
-                    onClick={() => onNavigate(planet)}>
+                    onClick={() => onNavigate(planet)} key={planet}>
                     {planet}
                 </Link>
             )

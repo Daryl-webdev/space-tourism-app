@@ -9,8 +9,8 @@ const NavBar = () => {
   const location = useLocation()
   const [activeItem, setActiveItem] = useState(location.pathname);
 
-  const navItemHandler = (itemNumber) => {
-    setActiveItem(itemNumber);
+  const navItemHandler = (pathName) => {
+    setActiveItem(pathName);
   };
   return (
     <div className={classes.navbar__wrapper}>

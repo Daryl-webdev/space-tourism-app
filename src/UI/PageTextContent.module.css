@@ -13,20 +13,7 @@
       align-items: center;
       gap: 1.5rem;
     }
-    .home__heading__five {
-      font-size: 16px;
-    }
-    .home__p {
-      font-size: 16px;
-      padding: 0 10px;
-      line-height: 1.5;
-     text-align: center;
-     width: 100%;
-     }
-  
-    .home__heading__one {
-      font-size: 80px ;
-    }
+   
    
   }
   @media ( 426px <= width <= 768px ) {
@@ -39,8 +26,5 @@
       gap: 2rem;
       margin-top: 1rem;
     }
-    .home__p {
-      font-size: 18px;
-     text-align: center;
-     }
+  
   }

@@ -28,28 +28,34 @@
     color: #FFFF;
     margin-bottom: 4rem;
   }
-  .crew__heading__five, .crew__heading__one, .crew__p {
+  .crew__heading__five, .crew__heading__one {
     font-weight: 100;
-    color: #FFFF;
    
   }
   .crew__heading__five {
     font-family: 'Bellefair';
     font-size: 26px;
-    opacity: 52%;
+    opacity: 50.42%;
     text-transform: uppercase;
+    color: #FFFF;
+
     
   }
   .crew__heading__one {
     font-family: 'Bellefair';
     font-size: 50px;
     text-transform: uppercase;
+    color: #FFFF;
+    margin: 1rem 0;
+
   }
   
   .crew__p {
     font-family: 'Barlow Condensed';
-    line-height: 2;
+    line-height: 32px;
+    font-size: 15px;
     width: 400px;
+    color: #D0D6F9;
     
   }
 
@@ -66,7 +72,7 @@
 
   .crew__pagination__container {
     position: absolute;
-    bottom: 3rem;
+    bottom: 2rem;
     display: flex;
     gap: 1rem;
   }

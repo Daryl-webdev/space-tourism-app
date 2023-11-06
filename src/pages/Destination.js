@@ -61,6 +61,8 @@ const Destination = () => {
         setCurrentPlanetImage(image)
         setCurrentPlanetImageAlt(alt)
     }, [currentPlanet])
+
+
     return (
         <div className={classes.destination__wrapper}>
             <div className={classes.destination__container}>
