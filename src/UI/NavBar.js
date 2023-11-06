@@ -5,17 +5,17 @@ import logo from "../assets/shared/logo.svg";
 import NavItem from "../component/NavItem";
 import { useLocation } from "react-router-dom";
 
-const NavBar = () => {
-  const location = useLocation()
-  const [activeItem, setActiveItem] = useState(location.pathname);
+const NavBar = ({ pathName }) => {
+  // const location = useLocation()
+  // const [activeItem, setActiveItem] = useState(location.pathname);
 
-  const navItemHandler = (pathName) => {
-    setActiveItem(pathName);
-  };
+  // const navItemHandler = (pathName) => {
+  //   setActiveItem(pathName);
+  // };
   return (
     <div className={classes.navbar__wrapper}>
       <img src={logo} alt="space-tourism-logo" className={classes.navbar__logo} />
-      <NavItem activeItem={activeItem} onNavItemClick={navItemHandler} />
+      <NavItem activeItem={pathName} />
     </div>
   );
 };

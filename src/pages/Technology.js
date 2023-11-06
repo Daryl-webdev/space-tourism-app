@@ -44,6 +44,7 @@ const Technology = () => {
     }, [isActive])
     return (
         <div className={classes.technology__wrapper}>
+
             <div className={classes.technology__container}>
                 <h2>
                     <span>03</span>SPACE LAUNCH 101
@@ -67,9 +68,11 @@ const Technology = () => {
                     </PageTextContent>
                 </div>
             </div>
-            {/* <div className={classes.crew__img__container}>
-                <img src={crewImage} alt={crewImage} className={classes.crew__img} />
-            </div> */}
+            <img src={data.img} alt={data.img} className={classes.technology__img__container} />
+            {/* <div className={classes.technology__img__container}> */}
+
+            {/* </div> */}
+
         </div >
     );
 };

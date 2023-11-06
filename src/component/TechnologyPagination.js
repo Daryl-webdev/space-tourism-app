@@ -1,5 +1,5 @@
 
-import classes from "../pages/Technology.module.css";
+import classes from "./TechnologyPagination.module.css";
 
 const TechnologyPagination = ({ technology_data, isActive, onBubbleClick }) => {
 

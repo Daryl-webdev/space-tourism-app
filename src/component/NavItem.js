@@ -4,7 +4,7 @@ import Hamburger from "./Hamburger";
 import { Link } from "react-router-dom";
 
 
-const NavItem = ({ activeItem, onNavItemClick }) => {
+const NavItem = ({ activeItem }) => {
   const [isNavShowing, setIsNavShowing] = useState(false)
 
 
@@ -32,7 +32,7 @@ const NavItem = ({ activeItem, onNavItemClick }) => {
           return <Link to={link[1]} key={link[0]}
             className={`${classes.navbar__item} ${link[1] === activeItem && classes.navbar__active__item
               }`}
-            onClick={() => onNavItemClick(link[1])}>
+          >
             <span>{'0' + indx}</span>
             {link[0]}
           </Link>
